@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="CopyLibs">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/CopyLibs/mysql-connector-java-8.0.28.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/CopyLibs/RSTableMetro.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/CopyLibs/RojeruSan.parte1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/CopyLibs/RSCalendar.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/CopyLibs/org-netbeans-modules-java-j2seproject-copylibstask.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/CopyLibs/RSFoto_v1.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
