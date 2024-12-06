@@ -2,7 +2,7 @@ CREATE DATABASE employee_ms;
 USE employee_ms;
 
 CREATE TABLE Employee (
-    employeeId INT  PRIMARY KEY,
+    employeeId INT  PRIMARY KEY auto_increment,
     firstName VARCHAR(10),
     lastName VARCHAR(10),
     dob DATE,
@@ -20,7 +20,7 @@ CREATE TABLE Employee (
 );
 
 CREATE TABLE UserType (
-    userId INT PRIMARY KEY,
+    userId INT PRIMARY KEY auto_increment,
     username VARCHAR(10),
     password VARCHAR(20),
     email VARCHAR(50),
@@ -28,7 +28,7 @@ CREATE TABLE UserType (
 );
 
 CREATE TABLE Leave_(
-    leaveId INT PRIMARY KEY,
+    leaveId INT PRIMARY KEY auto_increment,
     startDate DATE,
     endDate DATE,
     leaveStatus VARCHAR(30),
@@ -39,7 +39,7 @@ CREATE TABLE Leave_(
 );
 
 CREATE TABLE Audit_Log (
-    auditId INT PRIMARY KEY,
+    auditId INT PRIMARY KEY auto_increment,
     actions VARCHAR(50),
     oldValue VARCHAR(20),
     newValue VARCHAR(20),
@@ -51,7 +51,7 @@ CREATE TABLE Audit_Log (
 );
 
 CREATE TABLE Position (
-    positionId INT PRIMARY KEY,
+    positionId INT PRIMARY KEY auto_increment,
     positionType VARCHAR(10),
     description VARCHAR(20),
     status VARCHAR(20),
@@ -63,7 +63,7 @@ CREATE TABLE Position (
 );
 
 CREATE TABLE Pay_Slip (
-    slipId INT PRIMARY KEY,
+    slipId INT PRIMARY KEY auto_increment,
     slipDate DATE,
     companyName VARCHAR(30),
     companyAccNumber INT,
@@ -77,7 +77,7 @@ CREATE TABLE Pay_Slip (
 );
 
 CREATE TABLE Training_Program (
-    programmeId INT PRIMARY KEY,
+    programmeId INT PRIMARY KEY auto_increment,
     name VARCHAR(10),
     startDate DATE,
     endDate DATE,
@@ -89,7 +89,7 @@ CREATE TABLE Training_Program (
 );
 
 CREATE TABLE Permissions (
-    permissionId INT PRIMARY KEY,
+    permissionId INT PRIMARY KEY auto_increment,
     name VARCHAR(10),
     accessRigths VARCHAR(10),
     createDate DATE,
@@ -99,7 +99,7 @@ CREATE TABLE Permissions (
 );
 
 CREATE TABLE PayRoll (
-    payrollId INT PRIMARY KEY,
+    payrollId INT PRIMARY KEY auto_increment,
     grossSalary FLOAT,
 	bonus FLOAT,
 	ETF FLOAT,
@@ -116,7 +116,7 @@ CREATE TABLE PayRoll (
 );
 
 CREATE TABLE Attendance (
-    attendanceId INT PRIMARY KEY,
+    attendanceId INT PRIMARY KEY auto_increment,
     clockInTime DATETIME,
     clockOutTime DATETIME,
     workHours INT,
@@ -128,7 +128,7 @@ CREATE TABLE Attendance (
 );
 
 create table Schedule_ (
-   scheduleId INT PRIMARY KEY,
+   scheduleId INT PRIMARY KEY auto_increment,
    scheduleName varchar(10),
    description varchar(20),
    createDate date,
@@ -138,7 +138,7 @@ create table Schedule_ (
     );
     
 CREATE TABLE Budget (
-    budgetId INT PRIMARY KEY,
+    budgetId INT PRIMARY KEY auto_increment,
     itemCategory VARCHAR(10),
     description VARCHAR(20),
     amount FLOAT,
@@ -146,7 +146,7 @@ CREATE TABLE Budget (
 );
 
 CREATE TABLE Performance_Review (
-    reviewId INT PRIMARY KEY,
+    reviewId INT PRIMARY KEY auto_increment,
     reviewDate DATE,
     reviewer VARCHAR(10),
     overallRating INT,
@@ -158,7 +158,7 @@ CREATE TABLE Performance_Review (
 );
 
 CREATE TABLE Feedback (
-    feedbackId INT PRIMARY KEY,
+    feedbackId INT PRIMARY KEY auto_increment,
     feedbackDate DATE,
     provider VARCHAR(10),
     comments VARCHAR(30),
